@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="objeto"></p>
+
+
+    <script>
+
+        var autos = {"cars" :
+                     '{"marca":"bmw","modelo":"318i","color":"negro"},'+
+                     '{"marca":"audi","modelo":"a4","color":"rojo"},'+
+                     '{"marca":"mercedes","modelo":"compresor","color":"azul"},'
+}
+
+tareaobj = JSON.parse(autos);
+
+//ciclo for
+for (let i = 0; i <= tareaobj.cars.length; i++) {
+    document.write(tareaobj.cars[i].marca + " " + tareaobj.cars[i].modelo + " " + tareaobj.cars[i].color + "<br>");
+    //alert(tareaobj.cars[2].modelo);
+}
+
+
+//ciclo while
+var autos2 = 0;
+
+while (autos2 < tareaobj.cars.length) {
+        document.write(tareaobj.cars[autos2].marca + " " + tareaobj.cars[autos2].modelo + " " + tareaobj.cars[autos2].color + "<br>");
+        autos2++;
+}
+
+
+//ciclo do while
+var autos3 = 0;
+
+do {
+    document.write(tareaobj.cars[autos3].marca + " " + tareaobj.cars[autos3].modelo + " " + tareaobj.cars[autos2].color + "<br>");
+    autos3++;
+}
+while (autos3 < tareaobj.cars.length)
+
+
+
+document.getElementById("tareaobjeto").innerHTML = 
+tareaobj.cars[2].marca + " " + tareaobj.cars[2].modelo + " " + tareaobj.cars[2].color;
+
+    </script>
+</body>
+</html>

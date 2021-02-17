@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id= "ejemplojson">  </p>
+
+
+    <script>
+
+        var array= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+        
+        for (let i= 1; i < array.length; i++) {
+            document.write (i) ;
+           //document.write(obj.array[i].a + " " + obj.array[i].z + "<br>");            
+        }
+
+        var limite;
+
+        while (limite < array.length) {
+            alert (array[limite]);
+        }
+
+       
+
+       /* var text = '{"nombres":[' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"},' +
+                            '{"priemrnombre":"jonnathan","primerapellido":"quintana"}' +
+        ']' +
+        '}';
+
+        Obj = JSON.parse(text);
+
+        for (let index = 0; index < array.length; index++) {
+            document.write(obj.nombres[index].primernombre + " " + obj.nombres[index].primerapellido + "<br>");
+            
+        }
+
+        alert(obj.nombres[1].primerapellido);
+        alert(obj.nombres.length);
+        alert(Object.keys(obj.nombres));
+
+
+
+        document.getElementById("ejemplojson").innerHTML =
+        obj.nombres[1].primernombre + " " + obj.nombres[1].primerapellido;*/
+    </script>
+</body>
+
+</html>
